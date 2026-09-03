@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Package manager lock files
+bun.lock
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build & compiled outputs
+dist/
+**/dist/
+build/
+**/build/
+web-build/
+**/web-build/
+*.tsbuildinfo
+
+# Expo & Mobile native files
+.expo/
+**/.expo/
+expo-env.d.ts
+**/expo-env.d.ts
+ios/
+**/ios/
+android/
+**/android/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Media & static assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+*.webp
+*.mp4
+*.ttf
+*.otf
+
+# Git & Cache
+.git/
+.cache/
+.nyc_output/
+coverage/

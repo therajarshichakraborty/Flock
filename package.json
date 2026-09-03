@@ -1,0 +1,16 @@
+{
+  "name": "Flock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Flock is a modern microblogging space where your ideas find their crowd. Share quick updates, follow your favorite topics, and build meaningful communities—all in one fast, clutter-free stream.",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "Rajarshi Chakraborty",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.9.6"
+  }
+}
