@@ -1,6 +1,2 @@
-module.exports = function (api) {
-  api.cache(true);
-  return {
-    presets: [['babel-preset-expo', { jsxImportSource: 'nativewind' }], 'nativewind/babel'],
-  };
-};
+// Replaced by babel.config.js
+module.exports = require('./babel.config.js');
