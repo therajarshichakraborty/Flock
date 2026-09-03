@@ -1,28 +1,28 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const MessageSchema = new mongoose.Schema(
   {
     chat: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Chat",
+      ref: 'Chat',
       required: true,
     },
 
     sender: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+      ref: 'User',
       required: true,
     },
 
     text: {
       type: String,
       trim: true,
-      default: "",
+      default: '',
     },
 
     image: {
       type: String,
-      default: "",
+      default: '',
     },
 
     seen: {
@@ -37,8 +37,8 @@ const MessageSchema = new mongoose.Schema(
 
     status: {
       type: String,
-      enum: ["sent", "delivered", "seen"],
-      default: "sent",
+      enum: ['sent', 'delivered', 'seen'],
+      default: 'sent',
     },
   },
   { timestamps: true }
@@ -46,6 +46,6 @@ const MessageSchema = new mongoose.Schema(
 
 MessageSchema.index({ chat: 1, createdAt: 1 });
 
-const Message = mongoose.model("Message", MessageSchema);
+const Message = mongoose.model('Message', MessageSchema);
 
 export default Message;

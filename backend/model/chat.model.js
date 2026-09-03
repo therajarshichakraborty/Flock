@@ -1,18 +1,18 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const ChatSchema = new mongoose.Schema(
   {
     participants: [
       {
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: "User", 
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
         required: true,
       },
     ],
 
     lastMessage: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Message",
+      ref: 'Message',
       default: null,
     },
 
@@ -27,6 +27,6 @@ const ChatSchema = new mongoose.Schema(
 ChatSchema.index({ participants: 1 });
 ChatSchema.index({ lastMessageAt: -1 });
 
-const Chat = mongoose.model("Chat", ChatSchema);
+const Chat = mongoose.model('Chat', ChatSchema);
 
 export default Chat;
