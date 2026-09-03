@@ -2,19 +2,20 @@
   "name": "backend for Flock",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "Flock is a modern microblogging space where your ideas find their crowd. Share quick updates, follow your favorite topics, and build meaningful communities—all in one fast, clutter-free stream.",
+  "description": "Flock is a modern microblogging space where your ideas find their crowd. Share quick updates, follow your favorite topics, and build meaningful communities-all in one fast, clutter-free stream.",
   "scripts": {
-    "dev": "node --watch src/server.js",
-    "start": "node src/server.js"
+    "dev": "node --watch server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "type": "module",
-  "author": "",
+  "author": "Rajarshi Chakraborty",
   "license": "ISC",
   "dependencies": {
     "@arcjet/inspect": "^1.0.0-beta.8",
     "@arcjet/node": "^1.0.0-beta.8",
     "@clerk/express": "^1.7.0",
+    "@types/node": "^26.4.1",
     "cloudinary": "^2.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
